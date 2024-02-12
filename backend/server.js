@@ -21,6 +21,4 @@ app.listen(3000,()=>{
     console.log('srever is running on potr 3000');
 })
 
-app.get  ('/user',(req,res)=>{
-  res.json({message:"Hello"}); 
-})
+app.use('/user',userRouter);
