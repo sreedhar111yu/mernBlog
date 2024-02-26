@@ -4,15 +4,15 @@ import {Link,} from 'react-router-dom'
 function signup() {
 
   const [formData, setFormData]=useState({});
-  const [error, setError]= useState(false);
-  const [loading,setLoading]= useState(false);
+  
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.id]: e.target.value
     });
-  };
+    
+  }; 
   return (
     <>
     <div className='min-h-screen mt-20'>
